@@ -1,0 +1,17 @@
+C:\Users\paula\source\Repos\snake_colisiones\snake_colisiones\bin\Debug\net8.0-windows\snake_colisiones.exe
+C:\Users\paula\source\Repos\snake_colisiones\snake_colisiones\bin\Debug\net8.0-windows\snake_colisiones.deps.json
+C:\Users\paula\source\Repos\snake_colisiones\snake_colisiones\bin\Debug\net8.0-windows\snake_colisiones.runtimeconfig.json
+C:\Users\paula\source\Repos\snake_colisiones\snake_colisiones\bin\Debug\net8.0-windows\snake_colisiones.dll
+C:\Users\paula\source\Repos\snake_colisiones\snake_colisiones\bin\Debug\net8.0-windows\snake_colisiones.pdb
+C:\Users\paula\source\Repos\snake_colisiones\snake_colisiones\obj\Debug\net8.0-windows\snake_colisiones.Form1.resources
+C:\Users\paula\source\Repos\snake_colisiones\snake_colisiones\obj\Debug\net8.0-windows\snake_colisiones.vbproj.GenerateResource.cache
+C:\Users\paula\source\Repos\snake_colisiones\snake_colisiones\obj\Debug\net8.0-windows\snake_colisiones.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\paula\source\Repos\snake_colisiones\snake_colisiones\obj\Debug\net8.0-windows\snake_colisiones.AssemblyInfoInputs.cache
+C:\Users\paula\source\Repos\snake_colisiones\snake_colisiones\obj\Debug\net8.0-windows\snake_colisiones.AssemblyInfo.vb
+C:\Users\paula\source\Repos\snake_colisiones\snake_colisiones\obj\Debug\net8.0-windows\snake_colisiones.vbproj.CoreCompileInputs.cache
+C:\Users\paula\source\Repos\snake_colisiones\snake_colisiones\obj\Debug\net8.0-windows\snake_colisiones.sourcelink.json
+C:\Users\paula\source\Repos\snake_colisiones\snake_colisiones\obj\Debug\net8.0-windows\snake_colisiones.dll
+C:\Users\paula\source\Repos\snake_colisiones\snake_colisiones\obj\Debug\net8.0-windows\refint\snake_colisiones.dll
+C:\Users\paula\source\Repos\snake_colisiones\snake_colisiones\obj\Debug\net8.0-windows\snake_colisiones.pdb
+C:\Users\paula\source\Repos\snake_colisiones\snake_colisiones\obj\Debug\net8.0-windows\snake_colisiones.genruntimeconfig.cache
+C:\Users\paula\source\Repos\snake_colisiones\snake_colisiones\obj\Debug\net8.0-windows\ref\snake_colisiones.dll
