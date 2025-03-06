@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\paula\\source\\Repos\\snake_colisiones\\",
+  "WorkspaceRootPath": "C:\\Users\\paula\\Downloads\\Snake_VB.NET\\snake_colisiones\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7FA7F1F9-D044-41C0-AF4B-D6D5068383FF}|snake_colisiones\\snake_colisiones.vbproj|c:\\users\\paula\\source\\repos\\snake_colisiones\\snake_colisiones\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "AbsoluteMoniker": "D:0:0:{7FA7F1F9-D044-41C0-AF4B-D6D5068383FF}|snake_colisiones\\snake_colisiones.vbproj|c:\\users\\paula\\downloads\\snake_vb.net\\snake_colisiones\\snake_colisiones\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{7FA7F1F9-D044-41C0-AF4B-D6D5068383FF}|snake_colisiones\\snake_colisiones.vbproj|solutionrelative:snake_colisiones\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FA7F1F9-D044-41C0-AF4B-D6D5068383FF}|snake_colisiones\\snake_colisiones.vbproj|c:\\users\\paula\\source\\repos\\snake_colisiones\\snake_colisiones\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "AbsoluteMoniker": "D:0:0:{7FA7F1F9-D044-41C0-AF4B-D6D5068383FF}|snake_colisiones\\snake_colisiones.vbproj|c:\\users\\paula\\downloads\\snake_vb.net\\snake_colisiones\\snake_colisiones\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{7FA7F1F9-D044-41C0-AF4B-D6D5068383FF}|snake_colisiones\\snake_colisiones.vbproj|solutionrelative:snake_colisiones\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     }
   ],
@@ -44,11 +44,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Form1.vb",
-              "DocumentMoniker": "C:\\Users\\paula\\source\\Repos\\snake_colisiones\\snake_colisiones\\Form1.vb",
+              "DocumentMoniker": "C:\\Users\\paula\\Downloads\\Snake_VB.NET\\snake_colisiones\\snake_colisiones\\Form1.vb",
               "RelativeDocumentMoniker": "snake_colisiones\\Form1.vb",
-              "ToolTip": "C:\\Users\\paula\\source\\Repos\\snake_colisiones\\snake_colisiones\\Form1.vb",
+              "ToolTip": "C:\\Users\\paula\\Downloads\\Snake_VB.NET\\snake_colisiones\\snake_colisiones\\Form1.vb",
               "RelativeToolTip": "snake_colisiones\\Form1.vb",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAG0AAAALAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2025-03-06T01:08:46.674Z",
               "EditorCaption": ""
@@ -57,9 +57,9 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Form1.vb [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\paula\\source\\Repos\\snake_colisiones\\snake_colisiones\\Form1.vb",
+              "DocumentMoniker": "C:\\Users\\paula\\Downloads\\Snake_VB.NET\\snake_colisiones\\snake_colisiones\\Form1.vb",
               "RelativeDocumentMoniker": "snake_colisiones\\Form1.vb",
-              "ToolTip": "C:\\Users\\paula\\source\\Repos\\snake_colisiones\\snake_colisiones\\Form1.vb [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\paula\\Downloads\\Snake_VB.NET\\snake_colisiones\\snake_colisiones\\Form1.vb [Dise\u00F1o]",
               "RelativeToolTip": "snake_colisiones\\Form1.vb [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2025-03-06T00:39:37.189Z",

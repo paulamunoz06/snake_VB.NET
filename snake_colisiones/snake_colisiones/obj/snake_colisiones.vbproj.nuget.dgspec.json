@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\paula\\source\\Repos\\snake_colisiones\\snake_colisiones\\snake_colisiones.vbproj": {}
+    "C:\\Users\\paula\\Downloads\\Snake_VB.NET\\snake_colisiones\\snake_colisiones\\snake_colisiones.vbproj": {}
   },
   "projects": {
-    "C:\\Users\\paula\\source\\Repos\\snake_colisiones\\snake_colisiones\\snake_colisiones.vbproj": {
+    "C:\\Users\\paula\\Downloads\\Snake_VB.NET\\snake_colisiones\\snake_colisiones\\snake_colisiones.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\paula\\source\\Repos\\snake_colisiones\\snake_colisiones\\snake_colisiones.vbproj",
+        "projectUniqueName": "C:\\Users\\paula\\Downloads\\Snake_VB.NET\\snake_colisiones\\snake_colisiones\\snake_colisiones.vbproj",
         "projectName": "snake_colisiones",
-        "projectPath": "C:\\Users\\paula\\source\\Repos\\snake_colisiones\\snake_colisiones\\snake_colisiones.vbproj",
+        "projectPath": "C:\\Users\\paula\\Downloads\\Snake_VB.NET\\snake_colisiones\\snake_colisiones\\snake_colisiones.vbproj",
         "packagesPath": "C:\\Users\\paula\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\paula\\source\\Repos\\snake_colisiones\\snake_colisiones\\obj\\",
+        "outputPath": "C:\\Users\\paula\\Downloads\\Snake_VB.NET\\snake_colisiones\\snake_colisiones\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\paula\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,4 +1,15 @@
-﻿' Este formulario es donde se ejecuta el juego de la serpiente.
+﻿' ======================================================
+' Juego de la Serpiente (Snake) en Visual Basic .NET
+' ======================================================
+'
+' Este proyecto es una implementación del clásico juego de la serpiente.
+' El objetivo es controlar una serpiente que crece al comer comida,
+' evitando chocar contra los bordes de la ventana o contra sí misma.
+'
+' Version: 0.3
+' ======================================================
+
+' Este formulario es donde se ejecuta el juego de la serpiente.
 Public Class Form1
 
     ' Número de filas y columnas del mapa del juego.
