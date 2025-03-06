@@ -16,7 +16,7 @@ Imports System.Reflection
 <Assembly: System.Reflection.AssemblyCompanyAttribute("snake"),  _
  Assembly: System.Reflection.AssemblyConfigurationAttribute("Debug"),  _
  Assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0"),  _
- Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0"),  _
+ Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ff39a80648ea7931365f27aefbed1c0ac1f084e0"),  _
  Assembly: System.Reflection.AssemblyProductAttribute("snake"),  _
  Assembly: System.Reflection.AssemblyTitleAttribute("snake"),  _
  Assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0"),  _

@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\paula\\Downloads\\snake\\",
+  "WorkspaceRootPath": "C:\\Users\\paula\\Downloads\\Snake_VB.NET\\snake\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{237D2045-116A-4505-811B-4F4E915833C1}|snake\\snake.vbproj|c:\\users\\paula\\downloads\\snake\\snake\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "AbsoluteMoniker": "D:0:0:{237D2045-116A-4505-811B-4F4E915833C1}|snake\\snake.vbproj|c:\\users\\paula\\downloads\\snake_vb.net\\snake\\snake\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{237D2045-116A-4505-811B-4F4E915833C1}|snake\\snake.vbproj|solutionrelative:snake\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{237D2045-116A-4505-811B-4F4E915833C1}|snake\\snake.vbproj|c:\\users\\paula\\downloads\\snake\\snake\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "AbsoluteMoniker": "D:0:0:{237D2045-116A-4505-811B-4F4E915833C1}|snake\\snake.vbproj|c:\\users\\paula\\downloads\\snake_vb.net\\snake\\snake\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{237D2045-116A-4505-811B-4F4E915833C1}|snake\\snake.vbproj|solutionrelative:snake\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     }
   ],
@@ -44,11 +44,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Form1.vb",
-              "DocumentMoniker": "C:\\Users\\paula\\Downloads\\snake\\snake\\Form1.vb",
+              "DocumentMoniker": "C:\\Users\\paula\\Downloads\\Snake_VB.NET\\snake\\snake\\Form1.vb",
               "RelativeDocumentMoniker": "snake\\Form1.vb",
-              "ToolTip": "C:\\Users\\paula\\Downloads\\snake\\snake\\Form1.vb",
+              "ToolTip": "C:\\Users\\paula\\Downloads\\Snake_VB.NET\\snake\\snake\\Form1.vb",
               "RelativeToolTip": "snake\\Form1.vb",
-              "ViewState": "AgIAAFYAAAAAAAAAAAAYwH0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2025-03-05T22:32:22.745Z",
               "EditorCaption": ""
@@ -57,9 +57,9 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Form1.vb [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\paula\\Downloads\\snake\\snake\\Form1.vb",
+              "DocumentMoniker": "C:\\Users\\paula\\Downloads\\Snake_VB.NET\\snake\\snake\\Form1.vb",
               "RelativeDocumentMoniker": "snake\\Form1.vb",
-              "ToolTip": "C:\\Users\\paula\\Downloads\\snake\\snake\\Form1.vb [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\paula\\Downloads\\Snake_VB.NET\\snake\\snake\\Form1.vb [Dise\u00F1o]",
               "RelativeToolTip": "snake\\Form1.vb [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2025-03-05T22:32:04.804Z",

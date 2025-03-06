@@ -1,4 +1,14 @@
-﻿'Clase principal que representa la ventana (formulario) de la aplicación
+﻿' =======================================================================
+' Juego de la Serpiente (Snake) en Visual Basic .NET
+' =======================================================================
+'
+' Este proyecto es una implementación del clásico juego de la serpiente.
+' El objetivo es controlar una serpiente que crece al comer comida
+'
+' Version: 0.1
+' =======================================================================
+
+'Clase principal que representa la ventana (formulario) de la aplicación
 Public Class Form1
     ' Arreglos que guardan las coordenadas X e Y de cada parte del cuerpo de la serpiente
     Private CX(500) As Integer                  ' Coordenadas horizontales (X)
