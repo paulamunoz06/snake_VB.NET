@@ -16,7 +16,7 @@ Imports System.Reflection
 <Assembly: System.Reflection.AssemblyCompanyAttribute("snake_bordes"),  _
  Assembly: System.Reflection.AssemblyConfigurationAttribute("Debug"),  _
  Assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0"),  _
- Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0"),  _
+ Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1cf08baa05bc4ee02c6699dc2697a9b87d59ff6b"),  _
  Assembly: System.Reflection.AssemblyProductAttribute("snake_bordes"),  _
  Assembly: System.Reflection.AssemblyTitleAttribute("snake_bordes"),  _
  Assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0"),  _

@@ -1,4 +1,15 @@
-﻿'Clase principal que representa la ventana (formulario) de la aplicación
+﻿' ======================================================
+' Juego de la Serpiente (Snake) en Visual Basic .NET
+' ======================================================
+'
+' Este proyecto es una implementación del clásico juego de la serpiente.
+' El objetivo es controlar una serpiente que crece al comer comida,
+' define un mapa o marco de colisiones (Sin funcionamiento)
+'
+' Version> 0.2
+' ======================================================
+
+'Clase principal que representa la ventana (formulario) de la aplicación
 Public Class Form1
     ' Número de filas y columnas del mapa
     Private numFilas As Short = 21

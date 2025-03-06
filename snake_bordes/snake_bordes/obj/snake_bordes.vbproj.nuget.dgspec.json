@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\paula\\Downloads\\snake_bordes\\snake_bordes\\snake_bordes.vbproj": {}
+    "C:\\Users\\paula\\Downloads\\Snake_VB.NET\\snake_bordes\\snake_bordes\\snake_bordes.vbproj": {}
   },
   "projects": {
-    "C:\\Users\\paula\\Downloads\\snake_bordes\\snake_bordes\\snake_bordes.vbproj": {
+    "C:\\Users\\paula\\Downloads\\Snake_VB.NET\\snake_bordes\\snake_bordes\\snake_bordes.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\paula\\Downloads\\snake_bordes\\snake_bordes\\snake_bordes.vbproj",
+        "projectUniqueName": "C:\\Users\\paula\\Downloads\\Snake_VB.NET\\snake_bordes\\snake_bordes\\snake_bordes.vbproj",
         "projectName": "snake_bordes",
-        "projectPath": "C:\\Users\\paula\\Downloads\\snake_bordes\\snake_bordes\\snake_bordes.vbproj",
+        "projectPath": "C:\\Users\\paula\\Downloads\\Snake_VB.NET\\snake_bordes\\snake_bordes\\snake_bordes.vbproj",
         "packagesPath": "C:\\Users\\paula\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\paula\\Downloads\\snake_bordes\\snake_bordes\\obj\\",
+        "outputPath": "C:\\Users\\paula\\Downloads\\Snake_VB.NET\\snake_bordes\\snake_bordes\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\paula\\AppData\\Roaming\\NuGet\\NuGet.Config",
