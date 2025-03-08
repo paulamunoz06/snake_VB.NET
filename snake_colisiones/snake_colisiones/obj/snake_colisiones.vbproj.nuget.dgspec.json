@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\paula\\Downloads\\Snake_VB.NET\\snake_colisiones\\snake_colisiones\\snake_colisiones.vbproj": {}
+    "C:\\Users\\spart\\OneDrive\\Documentos\\6 semestre\\Estructura de lenguajes\\snake_VB.NET\\snake_colisiones\\snake_colisiones\\snake_colisiones.vbproj": {}
   },
   "projects": {
-    "C:\\Users\\paula\\Downloads\\Snake_VB.NET\\snake_colisiones\\snake_colisiones\\snake_colisiones.vbproj": {
+    "C:\\Users\\spart\\OneDrive\\Documentos\\6 semestre\\Estructura de lenguajes\\snake_VB.NET\\snake_colisiones\\snake_colisiones\\snake_colisiones.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\paula\\Downloads\\Snake_VB.NET\\snake_colisiones\\snake_colisiones\\snake_colisiones.vbproj",
+        "projectUniqueName": "C:\\Users\\spart\\OneDrive\\Documentos\\6 semestre\\Estructura de lenguajes\\snake_VB.NET\\snake_colisiones\\snake_colisiones\\snake_colisiones.vbproj",
         "projectName": "snake_colisiones",
-        "projectPath": "C:\\Users\\paula\\Downloads\\Snake_VB.NET\\snake_colisiones\\snake_colisiones\\snake_colisiones.vbproj",
-        "packagesPath": "C:\\Users\\paula\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\paula\\Downloads\\Snake_VB.NET\\snake_colisiones\\snake_colisiones\\obj\\",
+        "projectPath": "C:\\Users\\spart\\OneDrive\\Documentos\\6 semestre\\Estructura de lenguajes\\snake_VB.NET\\snake_colisiones\\snake_colisiones\\snake_colisiones.vbproj",
+        "packagesPath": "C:\\Users\\spart\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\spart\\OneDrive\\Documentos\\6 semestre\\Estructura de lenguajes\\snake_VB.NET\\snake_colisiones\\snake_colisiones\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\paula\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\spart\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
