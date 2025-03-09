@@ -15,6 +15,15 @@
     Private mapa(numFilas, numColumnas) As Char
 
     Private deadBlock As Label
+
+    Private longitud As Short ' largo de serpiente
+    'posicion de serpiente, se va actualizando para logica
+    Private CX(numFilas) As Integer
+    Private CY(numColumnas) As Integer
+    Private movimiento As Byte
+    Private movimientoAnterior As Byte
+    Private contador As Short 'contador de puntos o comidas de snake
+
     Private Sub Form2_load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.BackColor = Color.AliceBlue
         Me.ClientSize = New Size(numFilas * pixel, numColumnas * pixel)
@@ -43,8 +52,10 @@
         crear_cuerpo()
         dibujar_mapa()
         guardar_mapa()
-        'iniciar_juego()
+        iniciar_juego()
     End Sub
+
+
     'este es como el mas jodio
     Private Sub timer_tick(sender As Object, e As EventArgs)
         Throw New NotImplementedException()
@@ -102,5 +113,38 @@
         deadBlock.Size = New Size(pixel, pixel)
         deadBlock.Location = New Point(i, j)
         Me.Controls.Add(deadBlock)
+    End Sub
+    Private Sub iniciar_juego()
+        'cuando se resetea el juego se tiene que ocultar larga que estaba la serpiente
+        For A As Short = 0 To longitud 'parece que por defecto se coloca en 0 si no se inicializa
+            cuerpo(A).Visible = False
+        Next A
+        longitud = 0 'reestablece longitud
+        ' Establece la posición inicial de la cabeza de la serpiente
+        CX(0) = 120 : CY(0) = 150
+        lblSnake.Location = New Point(CX(0), CY(0))
+
+        ' Oculta la comida al reiniciar el juego
+        lblComida.Visible = False
+
+        ' Restablece las direcciones de movimiento
+        movimiento = 0
+        movimientoAnterior = 0
+        contador = 0
+
+        ' Inicia el temporizador para comenzar el movimiento automático
+        timer.Start()
+    End Sub
+    Private Sub Form1_Key(sender As Object, e As KeyEventArgs) Handles MyBase.KeyDown
+        ' Dependiendo de la tecla selecionada determina el valor de movimiento
+        Select Case e.KeyCode
+            Case Keys.Right : If movimientoAnterior <> 2 Then movimiento = 1        ' Derecha
+            Case Keys.Left : If movimientoAnterior <> 1 Then movimiento = 2         ' Izquierda
+            Case Keys.Down : If movimientoAnterior <> 4 Then movimiento = 3         ' Abajo
+            Case Keys.Up : If movimientoAnterior <> 3 Then movimiento = 4           ' Arriba
+        End Select
+
+        ' Guardar dirección actual para evitar movimientos opuestos
+        movimientoAnterior = movimiento
     End Sub
 End Class
