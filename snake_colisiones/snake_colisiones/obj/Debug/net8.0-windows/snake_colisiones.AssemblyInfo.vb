@@ -16,7 +16,7 @@ Imports System.Reflection
 <Assembly: System.Reflection.AssemblyCompanyAttribute("snake_colisiones"),  _
  Assembly: System.Reflection.AssemblyConfigurationAttribute("Debug"),  _
  Assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0"),  _
- Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9758fc0a9d66048f9beff6b1f81befd1ead80751"),  _
+ Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+15d56f6dc72b0a0f68dd835025ad36ca63f4e5d0"),  _
  Assembly: System.Reflection.AssemblyProductAttribute("snake_colisiones"),  _
  Assembly: System.Reflection.AssemblyTitleAttribute("snake_colisiones"),  _
  Assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0"),  _

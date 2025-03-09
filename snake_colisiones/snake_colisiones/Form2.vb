@@ -1,6 +1,6 @@
 ﻿Public Class Form2
-    Private numFilas As Short = 20
-    Private numColumnas As Short = 30
+    Private numFilas As Short = 21
+    Private numColumnas As Short = 29
     Private pixel As Short = 30 'Tamaño de pixel de pantalla
 
     Private lblSnake As Label 'cabeza snake
@@ -8,26 +8,26 @@
 
     Private timer As Timer
 
-    Private cuerpo(numFilas * numColumnas) As Label 'no puede ser mas grande que numFilas * numColumnas, incluso sobraria espacio
+    Private cuerpo(499) As Label
 
     Private lineaMapa(numFilas) As String 'Strings para dibujar mapa
 
-    Private mapa(numFilas, numColumnas) As Char
+    Private mapa(numColumnas, numFilas) As Char
 
     Private deadBlock As Label
 
     Private longitud As Short ' largo de serpiente
     'posicion de serpiente, se va actualizando para logica
-    Private CX(numFilas) As Integer
-    Private CY(numColumnas) As Integer
+    Private CX(500) As Integer
+    Private CY(500) As Integer
     Private movimiento As Byte
     Private movimientoAnterior As Byte
     Private contador As Short 'contador de puntos o comidas de snake
 
     Private Sub Form2_load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.BackColor = Color.AliceBlue
-        Me.ClientSize = New Size(numFilas * pixel, numColumnas * pixel)
-        'Me.KeyPreview = True    no lo veo tan necesario, ya que no se manejan otro tipo de eventos que activen las flechas o haya algo en el formulario ademas del snake
+        Me.ClientSize = New Size((numColumnas + 1) * pixel, (numFilas + 1) * pixel)
+        Me.KeyPreview = True
         'Me.DoubleBuffered = True tampoco lo veo necesario ya que todos los graficos son simples pixeles de colores y no imagenes o graficos complejos, comparalo si quieres
         Me.MaximizeBox = False
 
@@ -39,9 +39,9 @@
 
         lblComida = New Label
         lblComida.BackColor = Color.Brown
-        lblSnake.AutoSize = False
-        lblSnake.Size = New Size(pixel, pixel)
-        Me.Controls.Add(lblSnake)
+        lblComida.AutoSize = False
+        lblComida.Size = New Size(pixel, pixel)
+        Me.Controls.Add(lblComida)
         'lblComida.Visible = False   esto tampoco es necesario, como se calcula la posición de la comida aleatoriamente y se va mostrando no tiene sentido
 
         timer = New Timer
@@ -58,11 +58,92 @@
 
     'este es como el mas jodio
     Private Sub timer_tick(sender As Object, e As EventArgs)
-        Throw New NotImplementedException()
+        'actualizacion de posicion del cuerpo
+        For A As Short = longitud To 1 Step -1
+            CX(A) = CX(A - 1)
+            CY(A) = CY(A - 1)
+            cuerpo(A - 1).Location = New Point(CX(A), CY(A))
+        Next A
+        'actualizacion de cabeza
+        Select Case movimiento
+            Case 1 : CX(0) += pixel                                                 ' Mover hacia la derecha
+            Case 2 : CX(0) -= pixel                                                 ' Mover hacia la izquierda
+            Case 3 : CY(0) += pixel                                                 ' Mover hacia abajo
+            Case 4 : CY(0) -= pixel                                                 ' Mover hacia arriba
+        End Select
+        'verificar choque con ella misma
+        For A As Short = 1 To longitud
+            If CX(0) = CX(A) And CY(0) = CY(A) Then
+                timer.Enabled = False                                                    ' Si encuentra coincidencia se para el time
+                MsgBox("GAME OVER. Puntaje final: " & contador, MsgBoxStyle.Critical)       ' Mensaje que indica la terminacion del juego y el puntaje
+                iniciar_juego()                                                             ' Iniciar nuevamente el juego
+                Exit Sub
+            End If
+        Next A
+
+        ' Comprobar que la serpiente toca el cuerpo: GAME OVER
+        If mapa(CX(0) / 30, CY(0) / 30) <> " " Then
+            timer.Enabled = False                                                    ' Si encuentra coincidencia se para el time
+            MsgBox("GAME OVER. Puntaje final: " & contador, MsgBoxStyle.Critical)       ' Mensaje que indica la terminacion del juego y el puntaje
+            iniciar_juego()                                                             ' Iniciar nuevamente el juego
+            Exit Sub
+        End If
+
+        ' Actualizar la posición visual de la cabeza de la serpiente
+        lblSnake.Location = New Point(CX(0), CY(0))
+
+        ' Generar comida si no está visible
+        If lblComida.Visible = False Then mostrar_comida()
+
+        ' Detectar colisión entre la cabeza de la serpiente y la comida
+        If lblSnake.Bounds.IntersectsWith(lblComida.Bounds) Then
+            lblComida.Visible = False                                               ' Ocultar la comida tras ser comida
+            longitud += 1                                                           ' Aumentar la longitud de la serpiente
+            CX(longitud) = CX(longitud - 1)                                         ' Inicializar nueva parte con la posición X anterior
+            CY(longitud) = CY(longitud - 1)                                         ' Inicializar nueva parte con la posición Y anterior
+            cuerpo(longitud - 1).Location = New Point(CX(longitud), CY(longitud))   ' Actualizar la posición visual del segmento
+            cuerpo(longitud - 1).Visible = True                                     ' Hacer visible la nueva parte del cuerpo
+            contador += 1
+        End If
+
+        ' Actualizar la posición visual de la cabeza de la serpiente
+        lblSnake.Location = New Point(CX(0), CY(0))
+    End Sub
+
+    Private Sub mostrar_comida()
+        ' Permite guardar valores random
+        Randomize()
+
+        ' Coordenadas X,Y aleatorias
+        Dim CNX, CNY As Integer
+
+        ' Variable bandera que nos indica si en la posicion a colocar la comida hay un mapa
+        Dim sePuedeCrear As Boolean = True
+
+        Do
+            CNX = Int((numColumnas + 1) * Rnd())                    ' Coordenada X aleatoria entre 0 y 29 (numero de columnas).
+            CNY = Int((numFilas + 1) * Rnd())                       ' Coordenada X aleatoria entre 0 y 22 (numero de filas).
+
+            ' Verifica si la posición generada aleatoriamente para la comida coincide con alguna parte del mapa
+            sePuedeCrear = (mapa(CNX, CNY) = " ")
+
+            ' Verifica si la posición generada aleatoriamente para la comida coincide con alguna parte del cuerpo
+            ' Se inicializa en 0 porque comprobamos la cabeza
+            For A As Short = 0 To longitud
+                If (CNX * pixel) = CX(A) And (CNY * pixel) = CY(A) Then
+                    sePuedeCrear = False
+                End If
+            Next
+
+
+        Loop Until sePuedeCrear
+
+        lblComida.Location = New Point(CNX * pixel, CNY * pixel)    ' Definir la posición visual de la comida
+        lblComida.Visible = True                                    ' Hacer visible la comida
     End Sub
 
     Private Sub crear_cuerpo()
-        For a As Short = 0 To numColumnas * numFilas 'aqui en vez de ser 500 poddria simplemente ser numColumnas*numFilas y sobrarian Labels para la serpiente
+        For a As Short = 0 To 499 'aqui en vez de ser 500 poddria simplemente ser numColumnas*numFilas y sobrarian Labels para la serpiente
             cuerpo(a) = New Label
             cuerpo(a).Size = New Size(pixel, pixel)
             cuerpo(a).BackColor = Color.GreenYellow
@@ -97,8 +178,8 @@
     End Sub
 
     Private Sub guardar_mapa()
-        For i As Short = 0 To numFilas
-            For j As Short = 0 To numColumnas
+        For i As Short = 0 To numColumnas
+            For j As Short = 0 To numFilas
                 mapa(i, j) = Mid(lineaMapa(j), i + 1, 1) 'se busca guardar caracter por caracter en un mapa de chars para posteriormente ser utilizado en cada Tick
                 'parece ser que lo guarda al reves
                 If mapa(i, j) = "R" Then draw_deadblock(i * pixel, j * pixel)
@@ -135,6 +216,7 @@
         ' Inicia el temporizador para comenzar el movimiento automático
         timer.Start()
     End Sub
+    'esto pa detectar las teclas
     Private Sub Form1_Key(sender As Object, e As KeyEventArgs) Handles MyBase.KeyDown
         ' Dependiendo de la tecla selecionada determina el valor de movimiento
         Select Case e.KeyCode
@@ -147,4 +229,5 @@
         ' Guardar dirección actual para evitar movimientos opuestos
         movimientoAnterior = movimiento
     End Sub
+
 End Class

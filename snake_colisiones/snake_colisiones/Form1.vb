@@ -132,9 +132,9 @@ Public Class Form1
         ' Mover la cabeza según la dirección actual de movimiento
         Select Case movimiento
             Case 1 : CX(0) += pixel                                                 ' Mover hacia la derecha
-            Case 2 : CX(0) -= pixel                                                 ' Mover hacia la izquierda
-            Case 3 : CY(0) += pixel                                                 ' Mover hacia abajo
-            Case 4 : CY(0) -= pixel                                                 ' Mover hacia arriba
+            Case 2 : CX(0) -= pixel                                                ' Mover hacia la izquierda
+            Case 3 : CY(0) += pixel                                              ' Mover hacia abajo
+            Case 4 : CY(0) -= pixel                                               ' Mover hacia arriba
         End Select
 
         ' Comprobar que la serpiente toca el cuerpo: GAMER OVER
@@ -147,7 +147,6 @@ Public Class Form1
                 Exit Sub                                                                    ' Salir del sub
             End If
         Next A
-
         ' Comprobar que la serpiente toca el cuerpo: GAME OVER
         If mapa(CX(0) / 30, CY(0) / 30) <> " " Then
             tmrSnake.Enabled = False                                                    ' Si encuentra coincidencia se para el time
